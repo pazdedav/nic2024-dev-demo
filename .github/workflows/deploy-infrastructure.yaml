@@ -1,4 +1,4 @@
-name: Deploy Private Modules Library Components
+name: Deploy Workload
 
 on:
   push:
@@ -41,6 +41,6 @@ jobs:
           deploymentName: Workload-Components-${{ github.run_number }}
           scope: subscription
           subscriptionId: ${{ env.ARM_SUBSCRIPTION_ID }}
-          template: infrastructure/deploy.bicep
-          parameters: infrastructure/deploy.bicepparam
+          template: 'infrastructure/deploy.bicep'
+          parameters: 'infrastructure/deploy.bicepparam'
           region: ${{ env.LOCATION }}
