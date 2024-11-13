@@ -1,4 +1,5 @@
 // Deployment of my workload
+
 targetScope = 'subscription'
 
 param location string = 'westeurope'
