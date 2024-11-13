@@ -38,7 +38,7 @@ jobs:
         name: Deploy Solution components
         with:
           failOnStdErr: false
-          deploymentName: Private-Modules-Library-Components-${{ github.run_number }}
+          deploymentName: Workload-Components-${{ github.run_number }}
           scope: subscription
           subscriptionId: ${{ env.ARM_SUBSCRIPTION_ID }}
           template: infrastructure/deploy.bicep
